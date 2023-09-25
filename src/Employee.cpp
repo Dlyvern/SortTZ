@@ -1,4 +1,3 @@
-/*
 #include "Employee.hpp"
 
 Employee::Employee(std::string name, std::string lastName, int number) noexcept : m_Name{std::move(name)}, m_LastName{std::move(lastName)}, m_Number{number}{}
@@ -23,4 +22,4 @@ void Employee::ShowPersonNumberFirst() const
 {
     std::cout << m_Number << ": " << m_LastName << ' ' << m_Name << std::endl;
 }
-*/
+
