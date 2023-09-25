@@ -1,4 +1,3 @@
-/*
 #ifndef EMPLOYEE_HPP
 #define EMPLOYEE_HPP
 #include <iostream>
@@ -26,4 +25,3 @@ public:
 };
 
 #endif //EMPLOYEE_HPP
-*/
