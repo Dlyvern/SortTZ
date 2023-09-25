@@ -3,37 +3,7 @@
 #include <iostream>
 #include <memory>
 #include <vector>
-
-class Employee
-{
-private:
-    std::string m_Name;
-    std::string m_LastName;
-    int m_Number;
-public:
-    explicit Employee(std::string name, std::string lastName, int number) noexcept: m_Name{std::move(name)}, m_LastName{std::move(lastName)}, m_Number{number}{}
-
-    [[nodiscard]] const std::string &GetName() const {return m_Name;}
-
-    [[nodiscard]] const int& GetNumber() const {return m_Number;}
-
-    [[nodiscard]] const std::string &GetLastName() const {return m_LastName;}
-
-    void ShowPersonLastNameFirst() const
-    {
-        std::cout << m_LastName << ' ' << m_Name << ": " << m_Number << std::endl;
-    }
-
-    void ShowPersonNameFirst() const
-    {
-        std::cout << m_Name << ' ' << m_LastName << ": " << m_Number << std::endl;
-    }
-
-    void ShowPersonNumberFirst() const
-    {
-        std::cout << m_Number << ": " << m_LastName << ' ' << m_Name << std::endl;
-    }
-};
+#include "Employee.hpp"
 
 std::string ReadFile(const std::string &filePath)
 {
